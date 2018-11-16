@@ -1,0 +1,68 @@
+h1,h2,h3,h4,h5,h6{
+  margin: 0;
+  padding: 0;
+}
+
+p{
+  font-family: 'Asap','Heiti TC','Noto Sans TC';
+  font-size: 16px;
+  font-weight: 500;
+  text-align: justify;
+  margin: 0;
+}
+
+// form
+.form{
+  max-width: 600px;
+  margin: auto;
+}
+
+.form input[type="text"],
+.form input[type="tel"],
+.form input[type="email"],
+.form textarea{
+  padding: 8px 16px;
+  display: inline-block;
+  border: 1px solid #f5f1ef;
+  border-radius: 4px;
+  vertical-align: middle;
+  width: 100%;
+  margin-bottom: 16px;
+  background-color: inherit;
+  color: #f5f1ef;
+}
+.form textarea{
+  resize: none;
+}
+.form input[type="text"]:focus,
+.form input[type="tel"]:focus,
+.form input[type="email"]:focus,
+.form textarea:focus{
+  outline: 0;
+  border: 1px solid #cdaa87;
+}
+.form label{
+  margin-bottom: 3px;
+  display: inline-block;
+  vertical-align: middle;
+  color: #f5f1ef;
+  @media (min-width: 576px) {
+    margin-bottom: 8px;
+  }
+}
+// -------------------------------
+
+*{
+  position: relative;
+  box-sizing: border-box;
+  font-family: 'Nunito','Arial','Helvetica','sans-serif','Heiti TC','Noto Sans TC';
+  // border: solid 1px bisque;
+}
+
+html,body{
+  height: 100%;
+}
+
+.wapper{
+  background-color: #d2c7be;
+}

@@ -1,0 +1,130 @@
+// shop----------------------------------
+
+// shop-lookbookSs18
+.shop-content-lookbookSs18{
+  height: 400px;
+  background-color: $color--white;
+  @include pad-lg(){
+    height: 450px;
+  }
+}
+.shop-lookbookSs18-img{
+  background: url(../image/shop--left.jpg) center/cover no-repeat;
+  @include size(100%,100%);
+  transition: all 0.5s;
+  &:hover{
+    background-size: auto 130%;
+    background-position: center 80%;
+    filter: saturate(1.5);
+  }
+  @include pad-lg(){
+    &:hover{
+      background-size: auto 120%;
+    }
+  }
+}
+.shop-lookbookSs18-text{
+  padding: 0 20px;
+  color: $color--default;
+}
+.shop-substandard{
+  @include substandard(16px,13px);
+  @include pc-sm(){
+    font-size: 18px;
+    span{
+      font-size: 16px;
+    }
+  }
+}
+.shop-lookbookSs18-en{
+  font-size: 12px;
+  @include pad-md(){
+    margin-top: 10px;
+  }
+  @include pc-sm(){
+    font-size: 14px;
+  }
+}
+
+// shop-shoes
+.shop_content-shoes{
+  height: 400px;
+  @include pad-lg(){
+    height: 100%;
+  }
+}
+
+.shop-shoes-img-1,.shop-shoes-img-2{
+  @include size(100%,100%);
+  transition: all 0.5s;
+}
+.shop-shoes-img-1{
+  background: url(../image/shop--right-1.jpg) center/cover no-repeat;
+  &:hover{
+    background-size: auto 140%;
+    background-position: center 80%;
+    filter: saturate(1.8);
+  }
+}
+.shop-shoes-img-2{
+  background: url(../image/shop--right-2.jpg) center/cover no-repeat;
+  &:hover{
+    background-size: auto 135%;
+    background-position: center 80%;
+    filter: saturate(1.5);
+  }
+}
+.shop-shoes-man,.shop-shoes-pallipesBoy{
+  text-align: center;
+  @include size(100%,100%);
+  transition: all 0.5s;
+}
+.shop-textgrop{
+  height: 100%;
+  transition: all 0.5s;
+}
+.shop-shoes-text1,.shop-shoes-text2{
+  font-weight: 800;
+  color: $color--default;
+}
+.shop-shoes-man{
+  background-color: $color--primary;
+  &:hover{
+    background-color: $color--secondary;
+    .shop-shoes-text1,.shop-shoes-text2{
+      color: $bg--light-brow;
+    }
+  }
+  @include pad-lg(){
+    background-color: $bg--default;
+  }
+}
+.shop-shoes-pallipesBoy{
+  background-color: $bg--secondary;
+  &:hover{
+    background-color: $color--primary;
+    .shop-shoes-text1,.shop-shoes-text2{
+      color: $bg--light-brow;
+    }
+  }
+}
+.shop-textgrop{
+  color: $color--white;
+}
+.shop-shoes-text-sm{
+  color: $color--secondary;
+}
+
+@media (min-width: 768px)and(max-width: 992px){
+  .shop-shoes-img-1{
+    &:hover{
+      background-size: auto 103%;
+    }
+  }
+  .shop-shoes-img-2{
+    &:hover{
+      background-size: auto 105%;
+      filter: saturate(1.8);
+    }
+  }
+}

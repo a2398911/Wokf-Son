@@ -1,0 +1,36 @@
+$bg--default: #d2c7be;
+$bg--primary: #d2c9be;
+$bg--secondary: #ede9e0;
+$bg--light-brow: #e3dfd6;
+$color--white: #f5f1ef;
+$color--default: #7a6a56;
+$color--primary: #a48b78;
+$color--secondary: #cdaa87;
+$color--gray: #595757;
+$color--btn: #c6a474;
+
+@mixin size($h,$w:$h) {
+  height: $h;
+  width: $w;
+}
+
+@mixin substandard($fz:18px,$spanFz:16px) {
+  text-align: center;
+  font-weight: 800;
+  font-size: $fz;
+  span{
+    font-size: $spanFz;
+  }
+}
+
+@mixin btn($font-size,$height,$width,$line-heigh){
+  display: inline-block;
+  font-size: $font-size;
+  padding: $height $width;
+  background-color: $color--btn;
+  line-height: $line-heigh;
+  border-radius: $line-heigh;
+  text-align: center;
+  color: $color--white;
+  font-weight: 700;
+}

@@ -1,0 +1,41 @@
+.hero-img-group{
+  height: 400px;
+  @include pad-lg(){
+    height: auto;
+  }
+}
+.hero-img{
+  height: 400px;
+  @include pad-lg(){
+    height: 75vh;
+  }
+  // @include center();
+}
+.hero-img-1{
+  background: url(../image/hero.jpg) center/cover no-repeat;
+  
+}
+.hero-img-2{
+  background: url(../image/hero-2.jpg) center/cover no-repeat;
+  
+}
+.hero-img-3{
+  background: url(../image/hero-3.jpg) center/cover no-repeat;
+  
+}
+.hero-content{
+  text-align: center;
+  color: $color--white;
+  position: absolute;
+  z-index: 1;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+.hero-title{
+  font-weight: 800;
+}
+.hero-substandard{
+  margin-top: 6px;
+  font-weight: 400;
+}

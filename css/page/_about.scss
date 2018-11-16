@@ -1,0 +1,89 @@
+
+// about
+.about-content-ourStory{
+  height: 400px;
+  background-color: $color--white;
+  padding: 0 20px;
+  color: $color--default;
+  text-align: justify;
+  @include pad-lg(){
+    height: 450px;
+  }
+}
+.about-title-text{
+  margin-bottom: 20px;
+}
+.about-title{
+  font-style: italic;
+  font-weight: 800;
+  font-size: 25px;
+  @include pc-sm(){
+    font-size: initial;
+  }
+}
+.about-substandard{
+  @include substandard(15px);
+  text-align: left;
+  @include pc-sm(){
+    font-size: initial;
+  }
+}
+.about-zhTW{
+  letter-spacing: 1px;
+  font-weight: 400;
+  font-size: 14px;
+  @include pc-sm(){
+    font-size: initial;
+  }
+}
+.about-en{
+  font-size: 14px;
+  @include pc-sm(){
+    font-size: initial;
+  }
+}
+.about-btn{
+  text-align: right;
+  margin-top: 10px;
+}
+.btn-md{
+  font-size: 14px;
+  @include btn(16px,5px,20px,24px);
+  transition: all 0.3s;
+  &:hover{
+    background-color: $color--primary;
+  }
+}
+
+//abour-introduction 
+.about-content-introduction{
+  height: 450px;
+  color: $color--default;
+  @include pad-lg(){
+    height: 100%;
+  }
+}
+.about-introduction-img{
+  background: url(../image/about--right.jpg) center/cover no-repeat;
+  @include size(100%,100%);
+}
+.col-6-horizontal{
+  background-color: $bg--secondary;
+}
+.about-introduction-substandard{
+  @include substandard();
+  font-size: 15px;
+  @include pc-sm(){
+    font-size: 18px;
+  }
+}
+.about-introduction-text{
+  padding: 0 20px;
+}
+.about-introduction-en{
+  font-size: 12px;
+  margin-top: 5px;
+  @include pc-sm(){
+    font-size: 14px;
+  }
+}
